@@ -46,6 +46,32 @@ h2 {
     text-transform: uppercase;
     left: 50%;
     transform: translateX(-50%);
+    padding-bottom: 13px;
+}
+
+h2::before {
+    display: block;
+   position: absolute;
+   content: "";
+   height: 4px;
+   width: 0;
+   background: white;
+   left: 50%;
+   bottom: 0;
+   width: 35%;
+   left: 15%;
+}
+
+h2::after {
+    display: block;
+   position: absolute;
+   content: "";
+   height: 4px;
+   width: 50px;
+   background-color: white;
+   left: 50%;
+   bottom: 0;
+   width: 35%;
 }
 
 section {
@@ -164,6 +190,8 @@ nav.fill ul li a:hover:after {
     font-size: calc(0.72rem + 0.18vw);
     color: #333;
     margin-left: 20px;
+    font-weight: bold;
+    line-height: 1rem;
 }
 
 @keyframes floating {
